@@ -1,0 +1,254 @@
+{
+  ConstraintSets: {
+
+    start: {
+      lColumn: {
+        width: 'wrap',
+        height:'wrap',
+        top: [
+          'parent',
+          'top',
+          16
+        ],
+        start: [
+          'parent',
+          'start',
+          16
+        ],
+      end: [
+        'parent',
+        'end',
+        16
+      ],
+      bottom: [
+        'parent',
+        'bottom',
+        16
+      ],
+    },
+
+      foodImage: {
+        width: 150,
+        height: 150,
+        top: [
+          'parent',
+          'top'
+        ],
+        start: [
+          'parent',
+          'start',
+          16
+        ],
+        bottom: [
+          'parent',
+          'bottom'
+        ]
+      },
+
+      cardView: {
+        width: 'wrap',
+        height: 'wrap',
+        end: [
+          'parent',
+          'end',8
+        ],
+        top: [
+          'parent',
+          'top',16
+        ],
+        start: [
+          'parent',
+          'start',8
+        ],
+      },
+
+    },
+
+
+    end: {
+
+      lColumn: {
+        width: 'wrap',
+        height: 'wrap',
+        top: [
+          'parent',
+          'top',
+          16
+        ],
+        start: [
+          'parent',
+          'start',
+          16
+        ],
+      end: [
+        'parent',
+        'end',
+        16
+      ],
+      bottom: [
+        'parent',
+        'bottom',
+        16
+      ],
+    },
+
+
+  foodImage: {
+        width: 250,
+        height: 250,
+        top: [
+          'parent',
+          'top',
+          16
+        ],
+        start: [
+          'parent',
+          'start',
+          16
+        ],
+        end: [
+          'parent',
+          'end',
+          16
+        ]
+      },
+
+      cardView: {
+        width: 'wrap',
+        height: 'wrap',
+        end: [
+          'parent',
+          'end',16
+        ],
+        top: [
+          'foodImage',
+          'bottom',10
+        ],
+        start: [
+          'parent',
+          'start',16
+        ],
+      }
+    },
+  },
+
+
+  Transitions: {
+    default: {
+      from: 'start',
+      to: 'end',
+
+      onSwipe: {
+        anchor: 'mainCard',
+        direction: 'up',
+        side: 'top',
+      },
+
+
+//      onClick: {
+//        anchor: 'mainCard',
+//        action: 'onClick'
+//      }
+
+
+
+//      onClick: {
+//        anchor: 'foodImage',
+//        clickAction: 'toggle'
+//      }
+
+
+    }
+  }
+}
+
+
+
+
+///      KeyFrames: {
+//        KeyAttributes: [
+//          {
+//            target: [
+//              'robot'
+//            ],
+//            frames: [
+//              25,
+//              50,
+//              75
+//            ],
+//            rotationZ: [
+//              15,
+//              -15,
+//              15
+//            ],
+//          }
+//        ],
+//        KeyPositions: [
+//          {
+//            target: [
+//              'cloud'
+//            ],
+//            frames: [
+//              25,
+//              50,
+//              75
+//            ],
+//            percentX: [
+//              0.4,
+//              0.8,
+//              0.1
+//            ],
+//          },
+//          {
+//            target: [
+//              'leaf4'
+//            ],
+//            frames: [
+//              50
+//            ],
+//            keyPositionType: [
+//              'parentRelative'
+//            ],
+//            percentY: [
+//              0.75
+//            ],
+//            percentX: [
+//              0.75
+//            ],
+//          },
+//          {
+//            target: [
+//              'leaf5'
+//            ],
+//            frames: [
+//              50
+//            ],
+//            keyPositionType: [
+//              'parentRelative'
+//            ],
+//            percentY: [
+//              0.75
+//            ],
+//            percentX: [
+//              0.75
+//            ],
+//          },
+//          {
+//            target: [
+//              'leaf1'
+//            ],
+//            frames: [
+//              50
+//            ],
+//            keyPositionType: [
+//              'parentRelative'
+//            ],
+//            percentY: [
+//              0.10
+//            ],
+//            percentX: [
+//              0.10
+//            ],
+//          }
+//        ]
+//      },
